@@ -30,7 +30,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
-    background: url("https://github.com/kar-cee/maxin/blob/master/images/desktop/image-header.JPG") center;
+    background: url("/images/desktop/image-header.JPG") center;
     background-size: cover;
       @include responsive($mobile){
         background-color: blue;
@@ -48,5 +48,4 @@ body{
     height: 300px;
     width: 300px;
     background-color: blanchedalmond;
-   background: url("../images/desktop/image-gallery-sugarcubes.jpg");
 }
