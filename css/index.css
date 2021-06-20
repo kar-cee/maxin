@@ -3,7 +3,7 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-  background: url("./images/desktop/image-header.JPG") center;
+  background: url("https://images.pexels.com/photos/7165054/pexels-photo-7165054.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=12600") center;
   background-size: cover;
 }
 
