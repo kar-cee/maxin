@@ -1,0 +1,52 @@
+// $breakpoints:(
+//     "phone":435px,
+//     "desktop":1200px
+// );
+// $device;
+// $px;
+$mobile:420px;
+$tab:800px;
+$desktop:1012px;
+
+@mixin responsive($width) {
+        @if $width==$mobile{
+            @media screen and (max-width:$mobile) {
+                @content;
+            }
+        }
+        @else if $width==$tab{
+            @media screen and (max-width:$tab) and (min-width:$mobile){
+                @content;
+            }
+        }@else if $width==$desktop{
+            @media screen and (max-width:$desktop)and(min-width:$tab){
+                @content;
+            }
+        }
+    
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url("./images/desktop/image-header.JPG") center;
+    background-size: cover;
+      @include responsive($mobile){
+        background-color: blue;
+    };
+    @include responsive($tab){
+        background-color: rgb(95, 95, 112);
+    };
+    @include responsive($desktop){
+        background-color: rgb(0, 0, 0);
+    };
+}
+
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: blanchedalmond;
+  
+}
