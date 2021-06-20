@@ -30,7 +30,7 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
-    background: url("https://github.com/kar-cee/maxin/blob/master/images/desktop/image-header.JPG") center;
+    background: url("https://images.pexels.com/photos/7165054/pexels-photo-7165054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center;
     background-size: cover;
       @include responsive($mobile){
         background-color: blue;
